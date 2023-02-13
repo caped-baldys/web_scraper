@@ -10,7 +10,7 @@ class GetData:
         working_dir = os.getcwd()
 
         # name of file is url
-        # getting rid of https:// and blackcoffer.com
+        # getting rid of https:// 
         file_name = (url.split("/"))[-2]
 
         # This is chrome
