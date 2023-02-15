@@ -10,12 +10,12 @@ class GetData:
         working_dir = os.getcwd()
 
         # name of file is url
-        # getting rid of https:// 
+        # getting rid of https://blackcoffer.com
         file_name = (url.split("/"))[-2]
 
         # This is chrome
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'}
+            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
 
         # fetching page
         html_page = requests.get(url, headers=headers, allow_redirects=True)
